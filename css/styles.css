@@ -48,7 +48,7 @@ html {
 /* Parent */
 .parent {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: url("../assets/images/dinner-table-1.webp") no-repeat center
     center;
   background-size: cover;
@@ -60,12 +60,15 @@ html {
 .form-box {
   background-color: rgba(0, 0, 0, 0.6);
   height: 600px;
-  width: 600px;
+  width: 700px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.4);
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8);
   position: relative;
+  margin: 15px;
+  transition: 0.5s;
 }
+
 .line {
   width: 90%;
   height: 1px;
@@ -77,18 +80,23 @@ html {
 .header,
 .description {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.form-box:hover .header {
+  transition: 0.5s;
+  font-size: 33px;
 }
 .description {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .form-group {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-left: 30px;
-  margin-top: 40px;
+  margin-top: 25px;
   position: relative;
 }
 .form-group input {
@@ -103,57 +111,115 @@ html {
   margin-right: 2px;
   margin-left: 72px;
 }
-.form-group input#phone1-3,.form-group input#phone3-6,.form-group input#phone6-9{
+.form-group input#phone1-3,
+.form-group input#phone3-6,
+.form-group input#phone6-9 {
   width: 100px;
 }
 
-.form-group input#phone1-3{
+.form-group input#phone1-3 {
   margin-left: 67px;
 }
-.form-group input#phone3-6{
+.form-group input#phone3-6 {
   margin-left: 30px;
   margin-right: 30px;
 }
-.dash{
+.dash {
   font-weight: bolder;
   position: absolute;
-  top: 25%;
-  left: 50%;
+  top: 5%;
+  left: 43%;
   transform: translate(-1100%);
 }
-.dash1{
+.dash1 {
   font-weight: bolder;
   position: absolute;
-  top: 25%;
-  left: 73%;
+  top: 5%;
+  left: 62%;
   transform: translate(-1100%);
 }
-.term-checkbox{
+.term-checkbox {
   display: inline-block;
   margin-right: 5px;
 }
-.term-checkbox{
+.term-checkbox {
   margin-left: 72px;
 }
-.select-count{
+.select-count {
   margin-left: 155px;
 }
-.check-box-quantity{
+.check-box-quantity {
   margin-left: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.form-group select {
+  width: 80px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid var(--text-golden-primary);
+  background-color: transparent;
+  color: var(--text-white-primary);
+  font-family: "roboto-bold";
+  border-radius: 2px;
+  outline: none;
+}
+.form-group select option {
+  color: black;
+}
+.calculate {
+  width: 60%;
+  color: var(--text-white-primary);
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(51, 51, 51, 0.15);
+  border-radius: 10px;
+  margin-left: 157px;
+}
+.line2 {
+  width: 60%;
+  height: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+}
+.part1 {
+  width: 60%;
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.part2 {
+  width: 60%;
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 13px;
+}
+.form-group-button {
+  width: 100%;
+  margin-left: 159px;
+  margin-bottom: 20px;
+}
+.button {
+  width: 60%;
+  height: 50px;
+  background-color: rgb(209, 45, 45);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(220, 20, 60, 0.5);
+  border-radius: 5px;
+  color: var(--text-white-primary);
+  text-transform: uppercase;
+  box-shadow: 0px 0px 5px rgb(209, 45, 45);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.button:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px rgb(209, 45, 45);
+}
